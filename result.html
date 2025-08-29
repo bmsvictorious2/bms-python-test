@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="icon" type="image/png" href="image2.png">
+
+</head>
+<body>
+    <div style="background-color: rgb(179, 243, 190);" class="container">
+         <div class="header">
+        <img src="logo.png" alt="Logo">
+        <h1>B.M.S Victorious Academy</h1>
+        </div>
+        <center><p style="color: rgb(38, 6, 97); font-size: 20px;">Python Test</p></center>
+       <center><h3 style="color: rgb(10, 68, 4); font-size:30px;">Basic Python</h3></center> 
+        <p style="color: rgb(15, 4, 54);" id="studentInfo"></p>
+    </div>
+
+    <script>
+        // Function to extract URL parameters
+        function getQueryParams() {
+            const params = {};
+            const queryString = window.location.search.slice(1);
+            const pairs = queryString.split('&');
+            pairs.forEach(pair => {
+                const [key, value] = pair.split('=');
+                params[decodeURIComponent(key)] = decodeURIComponent(value);
+            });
+            return params;
+        }
+
+        // Get student name and marks from URL
+        const params = getQueryParams();
+        const studentName = params.name || "Not Provided";
+        const marks = params.marks || "0";
+       
+        document.getElementById('studentInfo').innerText = `Student Name: ${studentName}, Total Marks: ${marks}/50`;
+    </script>
+</body>
+
+</html>

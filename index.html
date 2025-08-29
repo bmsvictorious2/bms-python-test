@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+
+</head>
+<body>
+    <div class="container">
+         
+            <div style="display: flex; align-items: center;">
+  <img src="logo.png" height="50px" width="20px" alt="">
+  <h1 style="margin-left: 10px;">B.M.S Victorious Academy</h1>
+</div>
+            <h1>Python Test</h1>
+        <div class="name-section">
+            <label for="studentName">Enter your name:</label>
+            <input style="height:40px; width: 180px;" type="text" id="studentName" placeholder="Your Name">
+        </div>
+
+        <!-- Display Student's Name -->
+        <p id="displayName"></p>
+
+        <!-- Question 1 (Yes/No using checkboxes) -->
+        <div class="question">
+            <p>1. What will be the output of the following code?
+                x = 10 <br>
+                y = "5"  <br>
+               result = x + int(y) <br>
+               print(result) 
+            </p>
+            <input type="checkbox" id="SetPrimarymetrictoaccuracy" value="Set Primary metric to accuracy.">
+            <label for="Set Primary metric to accuracy">105</label><br>
+            
+            <input type="checkbox" id="EnableExplainbestmodel" value="Enable Explain best model">
+            <label for="Enable Explain best model">15</label>
+            
+        </div>
+        
+        <!-- Question 2 (Dropdown) -->
+        <div class="question">
+            <p>2.  What will be the data type of the variable result after this operation?
+                result = 15 / 2 </p>
+            <select id="question2">
+                <option value="">--Select an answer--</option>
+                <option value="inclusiveness">int</option>
+                <option value="reliability and safety">float</option>
+                <option value="transparency">str</option>
+                <option value="privacy and security">double</option>
+            </select>
+        </div>
+          <!-- Question 3 (Dropdown) -->
+        
+          <div class="question">
+            <p>3. How many times will the word "Hello" be printed? 
+                for i in range(1, 5):
+                if i % 2 == 0: <br>
+                continue     <br>
+                 print("Hello") <br>
+            </p>
+            <input type="radio" id="Computer" name="workloadAI" value="Computer vision">
+            <label for="Computer vision">4 times</label>
+            
+            <input type="radio" id="Computer" name="workloadAI" value="Machine Learning">
+            <label for="Machine Learning">5 times</label>
+            
+            <input type="radio" id="Computer" name="workloadAI" value="Artificial Intelligence">
+            <label for="Artificial Intelligence">2 times</label>
+        </div>
+        
+ <!-- Question 4 (Checkboxes) -->
+
+ <div class="question">
+    <p>4.What is the purpose of the else clause in a for loop? </p>
+    <input type="radio" id=" guiding" name="train" value="VALUE1">
+    <label for=" fairness"> It is executed if the loop is terminated by a break statement.</label>
+    <BR></BR>
+    <input type="radio" id="guiding" name="train" value="VALUE2">
+    <label for="inclusiveness">It is executed when the loop condition becomes False.</label>
+    <br>
+    <input type="radio" id="guiding" name="train" value="VALUE3">
+    <label for="accountability">It is required syntax for every while loop.</label>
+</div>
+<div class="question">
+    <p>5.What is the output of the following code?
+        my_set = {1, 2, 3, 3, 2, 1}
+        print(my_set) </p>
+    <select id="question5">
+        <option value="">--Select an answer--</option>
+        <option value="Positive">{1, 2, 3, 3, 2, 1}</option>
+        
+        <option value="negative">{1, 2, 3}</option>
+    </select>
+</div>
+
+
+<div class="question">
+    <p>6. What will the following code print?
+        numbers = [10, 20, 30, 40] 
+       if 25 in numbers: <br>
+         print("Found") <br>
+       else:              <br>
+         print("Not Found")
+    </p>
+    <select id="question7">
+        <option value="">--Select an answer--</option>
+        <option value="Object Detection">Found</option>
+        
+        <option value="OCR">Not Found</option>
+    </select>
+</div>
+<div class="question">
+    <p>7. What does this code snippet do?
+          value = 15       <br>
+           if value % 2 == 0:  <br>
+              status = "Even"  <br>
+            elif value % 3 == 0:  <br>
+               status = "Divisible by 3"  <br>
+            else:                   <br>
+               status = "Odd"        <br>
+            print(status)   </p>
+    <select id="question8">
+        <option value="">--Select an answer--</option>
+        <option value="fairness">Even</option>
+        
+        <option value="inclusiveness">Divisible by 3</option>
+    </select>
+</div>
+<div class="question">
+    <p>8. What is the output of the following code?
+          list1 = [1, 2, 3] <br>
+          list2 = list1      <br>
+          list2.append(4)     <br>
+           print(list1)        
+    </p>
+    <input type="radio" id="CNN" name="AI" value="CNN">
+    <label for="CNN">[1, 2, 3]</label>
+    
+    <input type="radio" id="RNN" name="AI" value="RNN">
+    <label for="RNN">[1, 2, 3, 4]</label>
+    
+    
+</div>
+<div class="question">
+  <p>9. Which set operation returns elements common to both sets?</p>
+    <input type="radio" id="Detect individual objects in an image" name="images" value="Detect individual objects in an image">
+    <label for="Detect individual objects in an image">Union (|)</label><BR></BR>
+    
+    <input type="radio" id="Assign a label to each pixel in the image" name="images" value="Assign a label to each pixel in the image">
+    <label for="Assign a label to each pixel in the image"> Intersection (&)</label><BR></BR>
+   
+    
+</div>
+<div class="question">
+    <div class="question">
+        <p>10. What is the final value of x after this code runs?
+              x = 10  <br>
+           if x > 5:    <br>
+             x = x + 5     <br>
+           if x > 12:      <br>
+             x = x + 3      <br>
+          else:            <br>
+             x = x - 2
+        </p>
+        <input type="radio" id="Building AI systems that require no human oversight" name="At" value="Building AI systems that require no human oversight">
+        <label for="Building AI systems that require no human oversight">15</label><br>
+        
+        <input type="radio" id="standards" name="At" value="standards">
+        <label for="standards">18</label>
+        
+</div>
+
+<button onclick="checkAnswers()">submit</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
